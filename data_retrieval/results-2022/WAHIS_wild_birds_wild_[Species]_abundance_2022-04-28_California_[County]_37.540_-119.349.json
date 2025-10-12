@@ -1,0 +1,87 @@
+{
+    "uuid": "37.54/-119.349/2022-04-28",
+    "date": "2022-04-28",
+    "latitude": 37.54,
+    "longitude": -119.349,
+    "abundance": "abundance",
+    "climate": {
+        "day1": {
+            "2m_temperature": 13.20241641998291,
+            "2m_humidity": 27.66666603088379,
+            "precipitation_flux": 0.0
+        },
+        "day2": {
+            "2m_temperature": 11.10866641998291,
+            "2m_humidity": 28.29166603088379,
+            "precipitation_flux": 0.0
+        },
+        "day3": {
+            "2m_temperature": 11.544083595275879,
+            "2m_humidity": 30.25,
+            "precipitation_flux": 0.0
+        },
+        "day4": {
+            "2m_temperature": 12.766999244689941,
+            "2m_humidity": 30.08333396911621,
+            "precipitation_flux": 0.0
+        },
+        "day5": {
+            "2m_temperature": 13.679499626159668,
+            "2m_humidity": 32.54166793823242,
+            "precipitation_flux": 0.0
+        },
+        "day6": {
+            "2m_temperature": 13.944083213806152,
+            "2m_humidity": 25.54166603088379,
+            "precipitation_flux": 0.0
+        },
+        "day7": {
+            "2m_temperature": 15.337833404541016,
+            "2m_humidity": 26.41666603088379,
+            "precipitation_flux": 0.0
+        },
+        "day8": {
+            "2m_temperature": 16.764917373657227,
+            "2m_humidity": 24.79166603088379,
+            "precipitation_flux": 0.0
+        },
+        "day9": {
+            "2m_temperature": 17.806583404541016,
+            "2m_humidity": 22.04166603088379,
+            "precipitation_flux": 0.0
+        },
+        "day10": {
+            "2m_temperature": 18.20866584777832,
+            "2m_humidity": 25.66666603088379,
+            "precipitation_flux": 0.0
+        },
+        "day11": {
+            "2m_temperature": 17.056583404541016,
+            "2m_humidity": 28.33333396911621,
+            "precipitation_flux": 0.0
+        },
+        "day12": {
+            "2m_temperature": 14.554499626159668,
+            "2m_humidity": 27.875,
+            "precipitation_flux": 0.0
+        },
+        "day13": {
+            "2m_temperature": 14.073249816894531,
+            "2m_humidity": 35.54166793823242,
+            "precipitation_flux": 0.0
+        },
+        "day14": {
+            "2m_temperature": 11.531582832336426,
+            "2m_humidity": 44.375,
+            "precipitation_flux": 0.0
+        },
+        "outbreak_day": {
+            "2m_temperature": 10.339917182922363,
+            "2m_humidity": 46.79166793823242,
+            "precipitation_flux": 0.0
+        }
+    },
+    "distance_inland": 191.5149,
+    "distance_to_water": 11.17,
+    "percentage_wetland": 0
+}

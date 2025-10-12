@@ -1,0 +1,1150 @@
+{
+  "WAHIS/Poultry/{}/02/07/2022/Indiana/Dubois County/38.391/-86.941": {
+    "county": "Dubois County",
+    "state": "Indiana",
+    "date": "2022-07-02",
+    "total_abundance": 0.005422897759891,
+    "species": {},
+    "beta": 0.002931034482758,
+    "latitude": 38.391,
+    "longitude": -86.941,
+    "climate": {
+      "outbreak_day-13": {
+        "2m_temperature": 21.52050018310547,
+        "2m_relative_humidity": 45.772010803222656,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-12": {
+        "2m_temperature": 23.35883331298828,
+        "2m_relative_humidity": 47.783111572265625,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-11": {
+        "2m_temperature": 26.079666137695312,
+        "2m_relative_humidity": 48.479183197021484,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-10": {
+        "2m_temperature": 27.61924934387207,
+        "2m_relative_humidity": 63.002193450927734,
+        "precipitation_flux": 0.02916666865348816
+      },
+      "outbreak_day-9": {
+        "2m_temperature": 25.8109188079834,
+        "2m_relative_humidity": 55.364349365234375,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-8": {
+        "2m_temperature": 25.194250106811523,
+        "2m_relative_humidity": 52.31822204589844,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-7": {
+        "2m_temperature": 26.42966651916504,
+        "2m_relative_humidity": 52.67344665527344,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-6": {
+        "2m_temperature": 26.53175163269043,
+        "2m_relative_humidity": 65.7591323852539,
+        "precipitation_flux": 0.0416666679084301
+      },
+      "outbreak_day-5": {
+        "2m_temperature": 22.665084838867188,
+        "2m_relative_humidity": 55.120426177978516,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-4": {
+        "2m_temperature": 20.967166900634766,
+        "2m_relative_humidity": 49.10955810546875,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-3": {
+        "2m_temperature": 21.66716766357422,
+        "2m_relative_humidity": 58.94502258300781,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-2": {
+        "2m_temperature": 24.99216651916504,
+        "2m_relative_humidity": 54.45212936401367,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-1": {
+        "2m_temperature": 28.04425048828125,
+        "2m_relative_humidity": 62.331241607666016,
+        "precipitation_flux": 0.012500000186264515
+      },
+      "outbreak_day": {
+        "2m_temperature": 26.350500106811523,
+        "2m_relative_humidity": 60.9011344909668,
+        "precipitation_flux": 0.0
+      }
+    }
+  },
+  "WAHIS/Poultry/{}/02/10/2022/Kentucky/Webster County/37.585/-87.48": {
+    "county": "Webster County",
+    "state": "Kentucky",
+    "date": "2022-10-02",
+    "total_abundance": 0.010546777846137001,
+    "species": {},
+    "beta": 1.0,
+    "latitude": 37.585,
+    "longitude": -87.48,
+    "climate": {
+      "outbreak_day-13": {
+        "2m_temperature": 25.991472244262695,
+        "2m_relative_humidity": 69.00359344482422,
+        "precipitation_flux": 0.17368420958518982
+      },
+      "outbreak_day-12": {
+        "2m_temperature": 27.558250427246094,
+        "2m_relative_humidity": 72.84809112548828,
+        "precipitation_flux": 0.004166666883975267
+      },
+      "outbreak_day-11": {
+        "2m_temperature": 28.606164932250977,
+        "2m_relative_humidity": 65.61541748046875,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-10": {
+        "2m_temperature": 23.456167221069336,
+        "2m_relative_humidity": 52.80134201049805,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-9": {
+        "2m_temperature": 16.54366683959961,
+        "2m_relative_humidity": 53.716121673583984,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-8": {
+        "2m_temperature": 20.37700080871582,
+        "2m_relative_humidity": 55.27192306518555,
+        "precipitation_flux": 0.42916667461395264
+      },
+      "outbreak_day-7": {
+        "2m_temperature": 21.968666076660156,
+        "2m_relative_humidity": 63.41015625,
+        "precipitation_flux": 0.004166666883975267
+      },
+      "outbreak_day-6": {
+        "2m_temperature": 18.612417221069336,
+        "2m_relative_humidity": 47.91364669799805,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-5": {
+        "2m_temperature": 15.735333442687988,
+        "2m_relative_humidity": 46.53493118286133,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-4": {
+        "2m_temperature": 13.993666648864746,
+        "2m_relative_humidity": 50.77067947387695,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-3": {
+        "2m_temperature": 14.229084014892578,
+        "2m_relative_humidity": 61.75913619995117,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-2": {
+        "2m_temperature": 15.097832679748535,
+        "2m_relative_humidity": 64.92121887207031,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-1": {
+        "2m_temperature": 15.941582679748535,
+        "2m_relative_humidity": 57.14130783081055,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day": {
+        "2m_temperature": 17.98200035095215,
+        "2m_relative_humidity": 62.166221618652344,
+        "precipitation_flux": 0.0
+      }
+    }
+  },
+  "WAHIS/Poultry/{}/14/02/2022/Indiana/Dubois County/38.294/-86.867": {
+    "county": "Dubois County",
+    "state": "Indiana",
+    "date": "2022-02-14",
+    "total_abundance": 0.004978765818109,
+    "species": {},
+    "beta": 8.649879072414286e-05,
+    "latitude": 38.294,
+    "longitude": -86.867,
+    "climate": {
+      "outbreak_day-13": {
+        "2m_temperature": 6.46899938583374,
+        "2m_relative_humidity": 57.105918884277344,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-12": {
+        "2m_temperature": 8.65149974822998,
+        "2m_relative_humidity": 80.95220947265625,
+        "precipitation_flux": 1.0500000715255737
+      },
+      "outbreak_day-11": {
+        "2m_temperature": -1.4089165925979614,
+        "2m_relative_humidity": 97.50967407226562,
+        "precipitation_flux": 1.3416666984558105
+      },
+      "outbreak_day-10": {
+        "2m_temperature": -4.492249965667725,
+        "2m_relative_humidity": 74.82889556884766,
+        "precipitation_flux": 0.10833334177732468
+      },
+      "outbreak_day-9": {
+        "2m_temperature": -8.59433364868164,
+        "2m_relative_humidity": 72.47484588623047,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-8": {
+        "2m_temperature": -4.240166664123535,
+        "2m_relative_humidity": 58.56259536743164,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-7": {
+        "2m_temperature": -3.94433331489563,
+        "2m_relative_humidity": 62.17818069458008,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-6": {
+        "2m_temperature": -0.0026667516212910414,
+        "2m_relative_humidity": 63.83867263793945,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-5": {
+        "2m_temperature": 6.414000034332275,
+        "2m_relative_humidity": 59.855472564697266,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-4": {
+        "2m_temperature": 3.2848331928253174,
+        "2m_relative_humidity": 65.89720153808594,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-3": {
+        "2m_temperature": 5.955667018890381,
+        "2m_relative_humidity": 58.45137405395508,
+        "precipitation_flux": 0.008333333767950535
+      },
+      "outbreak_day-2": {
+        "2m_temperature": -0.15058332681655884,
+        "2m_relative_humidity": 71.28494262695312,
+        "precipitation_flux": 0.06666667014360428
+      },
+      "outbreak_day-1": {
+        "2m_temperature": -4.94016695022583,
+        "2m_relative_humidity": 48.47590255737305,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day": {
+        "2m_temperature": -0.9735000133514404,
+        "2m_relative_humidity": 41.285064697265625,
+        "precipitation_flux": 0.0
+      }
+    }
+  },
+  "WAHIS/Poultry/{}/02/09/2022/Kentucky/Fulton County/36.511/-88.873": {
+    "county": "Fulton County",
+    "state": "Kentucky",
+    "date": "2022-09-02",
+    "total_abundance": 0.04600253201957501,
+    "species": {},
+    "beta": 1.0,
+    "latitude": 36.511,
+    "longitude": -88.873,
+    "climate": {
+      "outbreak_day-13": {
+        "2m_temperature": 25.844867706298828,
+        "2m_relative_humidity": 66.4218978881836,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-12": {
+        "2m_temperature": 25.385000228881836,
+        "2m_relative_humidity": 74.6661148071289,
+        "precipitation_flux": 0.03333333507180214
+      },
+      "outbreak_day-11": {
+        "2m_temperature": 25.11833381652832,
+        "2m_relative_humidity": 68.18238830566406,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-10": {
+        "2m_temperature": 24.828750610351562,
+        "2m_relative_humidity": 67.86544036865234,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-9": {
+        "2m_temperature": 25.21416664123535,
+        "2m_relative_humidity": 66.9999008178711,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-8": {
+        "2m_temperature": 26.349584579467773,
+        "2m_relative_humidity": 62.5867919921875,
+        "precipitation_flux": 0.004166666883975267
+      },
+      "outbreak_day-7": {
+        "2m_temperature": 26.537084579467773,
+        "2m_relative_humidity": 71.91907501220703,
+        "precipitation_flux": 0.03333333507180214
+      },
+      "outbreak_day-6": {
+        "2m_temperature": 26.720415115356445,
+        "2m_relative_humidity": 70.63416290283203,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-5": {
+        "2m_temperature": 27.27458381652832,
+        "2m_relative_humidity": 70.35175323486328,
+        "precipitation_flux": 0.03749999776482582
+      },
+      "outbreak_day-4": {
+        "2m_temperature": 26.96416664123535,
+        "2m_relative_humidity": 77.95703887939453,
+        "precipitation_flux": 0.512499988079071
+      },
+      "outbreak_day-3": {
+        "2m_temperature": 26.385000228881836,
+        "2m_relative_humidity": 77.80033111572266,
+        "precipitation_flux": 0.5
+      },
+      "outbreak_day-2": {
+        "2m_temperature": 24.845415115356445,
+        "2m_relative_humidity": 58.31852340698242,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-1": {
+        "2m_temperature": 23.941247940063477,
+        "2m_relative_humidity": 62.42477035522461,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day": {
+        "2m_temperature": 24.77750015258789,
+        "2m_relative_humidity": 76.54010772705078,
+        "precipitation_flux": 0.0
+      }
+    }
+  },
+  "WAHIS/Poultry/{}/18/02/2022/Indiana/Greene County/39.027/-86.949": {
+    "county": "Greene County",
+    "state": "Indiana",
+    "date": "2022-02-18",
+    "total_abundance": 0.0028796580090540004,
+    "species": {},
+    "beta": 0.016393442622950002,
+    "latitude": 39.027,
+    "longitude": -86.949,
+    "climate": {
+      "outbreak_day-13": {
+        "2m_temperature": -10.628499984741211,
+        "2m_relative_humidity": 72.37760162353516,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-12": {
+        "2m_temperature": -5.881416320800781,
+        "2m_relative_humidity": 69.41764068603516,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-11": {
+        "2m_temperature": -4.816833019256592,
+        "2m_relative_humidity": 75.55875396728516,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-10": {
+        "2m_temperature": -4.698083400726318,
+        "2m_relative_humidity": 72.2782211303711,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-9": {
+        "2m_temperature": 4.316500186920166,
+        "2m_relative_humidity": 73.76744842529297,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-8": {
+        "2m_temperature": 1.912333369255066,
+        "2m_relative_humidity": 70.48080444335938,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-7": {
+        "2m_temperature": 4.1935834884643555,
+        "2m_relative_humidity": 68.19385528564453,
+        "precipitation_flux": 0.02916666865348816
+      },
+      "outbreak_day-6": {
+        "2m_temperature": -1.900166630744934,
+        "2m_relative_humidity": 72.8991928100586,
+        "precipitation_flux": 0.04583333432674408
+      },
+      "outbreak_day-5": {
+        "2m_temperature": -6.302249908447266,
+        "2m_relative_humidity": 52.005428314208984,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-4": {
+        "2m_temperature": -5.708499908447266,
+        "2m_relative_humidity": 43.43857955932617,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-3": {
+        "2m_temperature": 1.0081666707992554,
+        "2m_relative_humidity": 42.15300369262695,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-2": {
+        "2m_temperature": 10.847750663757324,
+        "2m_relative_humidity": 52.09480667114258,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-1": {
+        "2m_temperature": 11.106082916259766,
+        "2m_relative_humidity": 87.31449127197266,
+        "precipitation_flux": 2.058333396911621
+      },
+      "outbreak_day": {
+        "2m_temperature": -2.3585000038146973,
+        "2m_relative_humidity": 54.68344497680664,
+        "precipitation_flux": 0.0
+      }
+    }
+  },
+  "WAHIS/Poultry/{}/16/02/2022/Indiana/Greene County/39.02/-86.936": {
+    "county": "Greene County",
+    "state": "Indiana",
+    "date": "2022-02-16",
+    "total_abundance": 0.009015410910872,
+    "species": {},
+    "beta": 3.6925593333881894e-05,
+    "latitude": 39.02,
+    "longitude": -86.936,
+    "climate": {
+      "outbreak_day-13": {
+        "2m_temperature": -3.8989996910095215,
+        "2m_relative_humidity": 86.41141510009766,
+        "precipitation_flux": 0.9550000429153442
+      },
+      "outbreak_day-12": {
+        "2m_temperature": -6.200666427612305,
+        "2m_relative_humidity": 74.72541046142578,
+        "precipitation_flux": 0.07500000298023224
+      },
+      "outbreak_day-11": {
+        "2m_temperature": -10.415249824523926,
+        "2m_relative_humidity": 74.35074615478516,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-10": {
+        "2m_temperature": -5.894416809082031,
+        "2m_relative_humidity": 69.41504669189453,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-9": {
+        "2m_temperature": -4.829833507537842,
+        "2m_relative_humidity": 75.55648040771484,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-8": {
+        "2m_temperature": -4.71108341217041,
+        "2m_relative_humidity": 72.27574920654297,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-7": {
+        "2m_temperature": 4.303500175476074,
+        "2m_relative_humidity": 73.76512145996094,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-6": {
+        "2m_temperature": 1.8993333578109741,
+        "2m_relative_humidity": 70.4782485961914,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-5": {
+        "2m_temperature": 4.180583477020264,
+        "2m_relative_humidity": 68.1911849975586,
+        "precipitation_flux": 0.02916666865348816
+      },
+      "outbreak_day-4": {
+        "2m_temperature": -1.9131666421890259,
+        "2m_relative_humidity": 72.89680480957031,
+        "precipitation_flux": 0.04583333432674408
+      },
+      "outbreak_day-3": {
+        "2m_temperature": -6.315250396728516,
+        "2m_relative_humidity": 52.001678466796875,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-2": {
+        "2m_temperature": -5.721500396728516,
+        "2m_relative_humidity": 43.434757232666016,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-1": {
+        "2m_temperature": 0.9951665997505188,
+        "2m_relative_humidity": 42.149253845214844,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day": {
+        "2m_temperature": 14.453499794006348,
+        "2m_relative_humidity": 63.70261764526367,
+        "precipitation_flux": 0.10000000149011612
+      }
+    }
+  },
+  "WAHIS/Poultry/{}/20/02/2022/Delaware/New Castle County/39.73/-75.509": {
+    "county": "New Castle County",
+    "state": "Delaware",
+    "date": "2022-02-20",
+    "total_abundance": 0.21448038432840702,
+    "species": {},
+    "beta": 0.0032258064516120003,
+    "latitude": 39.73,
+    "longitude": -75.509,
+    "climate": {
+      "outbreak_day-13": {
+        "2m_temperature": 1.5899999141693115,
+        "2m_relative_humidity": 80.05904388427734,
+        "precipitation_flux": 0.10499999672174454
+      },
+      "outbreak_day-12": {
+        "2m_temperature": 2.4599997997283936,
+        "2m_relative_humidity": 77.46995544433594,
+        "precipitation_flux": 0.10000000149011612
+      },
+      "outbreak_day-11": {
+        "2m_temperature": 0.9245832562446594,
+        "2m_relative_humidity": 63.54473876953125,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-10": {
+        "2m_temperature": 5.409999847412109,
+        "2m_relative_humidity": 67.2933120727539,
+        "precipitation_flux": 0.07916667312383652
+      },
+      "outbreak_day-9": {
+        "2m_temperature": 5.301666736602783,
+        "2m_relative_humidity": 67.10474395751953,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-8": {
+        "2m_temperature": 9.4350004196167,
+        "2m_relative_humidity": 53.08876037597656,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-7": {
+        "2m_temperature": 2.412083387374878,
+        "2m_relative_humidity": 71.45867156982422,
+        "precipitation_flux": 0.22083334624767303
+      },
+      "outbreak_day-6": {
+        "2m_temperature": -3.569166898727417,
+        "2m_relative_humidity": 53.498748779296875,
+        "precipitation_flux": 0.004166666883975267
+      },
+      "outbreak_day-5": {
+        "2m_temperature": -3.671250104904175,
+        "2m_relative_humidity": 45.342655181884766,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-4": {
+        "2m_temperature": 0.60999995470047,
+        "2m_relative_humidity": 68.66918182373047,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-3": {
+        "2m_temperature": 10.495416641235352,
+        "2m_relative_humidity": 72.68997955322266,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-2": {
+        "2m_temperature": 10.582916259765625,
+        "2m_relative_humidity": 67.39176940917969,
+        "precipitation_flux": 0.40416666865348816
+      },
+      "outbreak_day-1": {
+        "2m_temperature": 0.1704166978597641,
+        "2m_relative_humidity": 60.4356689453125,
+        "precipitation_flux": 0.012500000186264515
+      },
+      "outbreak_day": {
+        "2m_temperature": -0.5024999976158142,
+        "2m_relative_humidity": 67.52973175048828,
+        "precipitation_flux": 0.0
+      }
+    }
+  },
+  "WAHIS/Poultry/{}/22/02/2022/Indiana/Dubois County/38.368/-86.943": {
+    "county": "Dubois County",
+    "state": "Indiana",
+    "date": "2022-02-22",
+    "total_abundance": 1.4773230905599051e-05,
+    "species": {},
+    "beta": 0.011764705882352,
+    "latitude": 38.368,
+    "longitude": -86.943,
+    "climate": {
+      "outbreak_day-13": {
+        "2m_temperature": 6.63700008392334,
+        "2m_relative_humidity": 59.69636917114258,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-12": {
+        "2m_temperature": 3.024916648864746,
+        "2m_relative_humidity": 68.0575942993164,
+        "precipitation_flux": 0.004166666883975267
+      },
+      "outbreak_day-11": {
+        "2m_temperature": 6.160333156585693,
+        "2m_relative_humidity": 58.10626220703125,
+        "precipitation_flux": 0.008333333767950535
+      },
+      "outbreak_day-10": {
+        "2m_temperature": -0.25008323788642883,
+        "2m_relative_humidity": 70.23657989501953,
+        "precipitation_flux": 0.01666666753590107
+      },
+      "outbreak_day-9": {
+        "2m_temperature": -5.075083255767822,
+        "2m_relative_humidity": 50.482906341552734,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-8": {
+        "2m_temperature": -4.3750834465026855,
+        "2m_relative_humidity": 45.34981155395508,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-7": {
+        "2m_temperature": 2.243666648864746,
+        "2m_relative_humidity": 44.34501647949219,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-6": {
+        "2m_temperature": 11.751999855041504,
+        "2m_relative_humidity": 50.44580078125,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-5": {
+        "2m_temperature": 13.4124174118042,
+        "2m_relative_humidity": 79.16255950927734,
+        "precipitation_flux": 2.8333332538604736
+      },
+      "outbreak_day-4": {
+        "2m_temperature": -2.2542498111724854,
+        "2m_relative_humidity": 63.49832534790039,
+        "precipitation_flux": 0.02500000037252903
+      },
+      "outbreak_day-3": {
+        "2m_temperature": -0.9729999899864197,
+        "2m_relative_humidity": 50.81187057495117,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-2": {
+        "2m_temperature": 1.5499167442321777,
+        "2m_relative_humidity": 53.56065368652344,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-1": {
+        "2m_temperature": 10.641583442687988,
+        "2m_relative_humidity": 61.67811584472656,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day": {
+        "2m_temperature": 7.9644999504089355,
+        "2m_relative_humidity": 81.74380493164062,
+        "precipitation_flux": 0.0
+      }
+    }
+  },
+  "WAHIS/Poultry/{}/03/03/2022/Maryland/Cecil County/39.541/-75.917": {
+    "county": "Cecil County",
+    "state": "Maryland",
+    "date": "2022-03-03",
+    "total_abundance": 0.027626128796393003,
+    "species": {},
+    "beta": 0.0045662100456620005,
+    "latitude": 39.541,
+    "longitude": -75.917,
+    "climate": {
+      "outbreak_day-13": {
+        "2m_temperature": 9.010000228881836,
+        "2m_relative_humidity": 68.8757553100586,
+        "precipitation_flux": 0.3700000047683716
+      },
+      "outbreak_day-12": {
+        "2m_temperature": 0.3591666519641876,
+        "2m_relative_humidity": 63.33491897583008,
+        "precipitation_flux": 0.012500000186264515
+      },
+      "outbreak_day-11": {
+        "2m_temperature": -2.580416679382324,
+        "2m_relative_humidity": 41.727848052978516,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-10": {
+        "2m_temperature": 4.200833320617676,
+        "2m_relative_humidity": 59.41523742675781,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-9": {
+        "2m_temperature": 9.244584083557129,
+        "2m_relative_humidity": 89.8985824584961,
+        "precipitation_flux": 0.24166667461395264
+      },
+      "outbreak_day-8": {
+        "2m_temperature": 14.686249732971191,
+        "2m_relative_humidity": 82.0823974609375,
+        "precipitation_flux": 0.05000000074505806
+      },
+      "outbreak_day-7": {
+        "2m_temperature": 2.6862499713897705,
+        "2m_relative_humidity": 55.011165618896484,
+        "precipitation_flux": 0.0416666679084301
+      },
+      "outbreak_day-6": {
+        "2m_temperature": 3.117500066757202,
+        "2m_relative_humidity": 83.6263198852539,
+        "precipitation_flux": 0.8375000357627869
+      },
+      "outbreak_day-5": {
+        "2m_temperature": 0.9987499713897705,
+        "2m_relative_humidity": 54.27813720703125,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-4": {
+        "2m_temperature": 2.8195831775665283,
+        "2m_relative_humidity": 64.63339233398438,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-3": {
+        "2m_temperature": 2.661249876022339,
+        "2m_relative_humidity": 47.542236328125,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-2": {
+        "2m_temperature": 3.1549999713897705,
+        "2m_relative_humidity": 66.90050506591797,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-1": {
+        "2m_temperature": 7.823750019073486,
+        "2m_relative_humidity": 68.48380279541016,
+        "precipitation_flux": 0.012500000186264515
+      },
+      "outbreak_day": {
+        "2m_temperature": 2.2049999237060547,
+        "2m_relative_humidity": 40.84381866455078,
+        "precipitation_flux": 0.0
+      }
+    }
+  },
+  "WAHIS/Poultry/{}/03/01/2022/Indiana/Dubois County/38.354/-86.892": {
+    "county": "Dubois County",
+    "state": "Indiana",
+    "date": "2022-01-03",
+    "total_abundance": 0.003084239206658,
+    "species": {},
+    "beta": 0.33333333333333304,
+    "latitude": 38.354,
+    "longitude": -86.892,
+    "climate": {
+      "outbreak_day-13": {
+        "2m_temperature": 2.573500156402588,
+        "2m_relative_humidity": 72.14659881591797,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-12": {
+        "2m_temperature": 0.9230833053588867,
+        "2m_relative_humidity": 64.2895278930664,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-11": {
+        "2m_temperature": 2.808500051498413,
+        "2m_relative_humidity": 51.02980041503906,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-10": {
+        "2m_temperature": 12.243916511535645,
+        "2m_relative_humidity": 68.37166595458984,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-9": {
+        "2m_temperature": 17.802249908447266,
+        "2m_relative_humidity": 75.73401641845703,
+        "precipitation_flux": 0.21249999105930328
+      },
+      "outbreak_day-8": {
+        "2m_temperature": 9.883500099182129,
+        "2m_relative_humidity": 87.6070327758789,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-7": {
+        "2m_temperature": 16.325166702270508,
+        "2m_relative_humidity": 84.97884368896484,
+        "precipitation_flux": 0.22500000894069672
+      },
+      "outbreak_day-6": {
+        "2m_temperature": 10.733500480651855,
+        "2m_relative_humidity": 78.57732391357422,
+        "precipitation_flux": 0.5791666507720947
+      },
+      "outbreak_day-5": {
+        "2m_temperature": 10.366833686828613,
+        "2m_relative_humidity": 85.0528793334961,
+        "precipitation_flux": 0.3499999940395355
+      },
+      "outbreak_day-4": {
+        "2m_temperature": 7.991833209991455,
+        "2m_relative_humidity": 94.05449676513672,
+        "precipitation_flux": 0.0416666679084301
+      },
+      "outbreak_day-3": {
+        "2m_temperature": 10.804333686828613,
+        "2m_relative_humidity": 90.02571868896484,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-2": {
+        "2m_temperature": 14.79183292388916,
+        "2m_relative_humidity": 94.04480743408203,
+        "precipitation_flux": 1.870833396911621
+      },
+      "outbreak_day-1": {
+        "2m_temperature": 4.739749908447266,
+        "2m_relative_humidity": 82.9321060180664,
+        "precipitation_flux": 0.26250001788139343
+      },
+      "outbreak_day": {
+        "2m_temperature": -3.379000186920166,
+        "2m_relative_humidity": 80.82546997070312,
+        "precipitation_flux": 0.0
+      }
+    }
+  },
+  "WAHIS/Poultry/{}/03/01/2022/Missouri/Stoddard County/36.879/-89.884": {
+    "county": "Stoddard County",
+    "state": "Missouri",
+    "date": "2022-01-03",
+    "total_abundance": 0.06732086522512301,
+    "species": {},
+    "beta": 0.001168136200716,
+    "latitude": 36.879,
+    "longitude": -89.884,
+    "climate": {
+      "outbreak_day-13": {
+        "2m_temperature": 3.2114737033843994,
+        "2m_relative_humidity": 82.23420715332031,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-12": {
+        "2m_temperature": 3.621999979019165,
+        "2m_relative_humidity": 64.09484100341797,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-11": {
+        "2m_temperature": 5.290750026702881,
+        "2m_relative_humidity": 67.67868041992188,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-10": {
+        "2m_temperature": 14.907417297363281,
+        "2m_relative_humidity": 77.63263702392578,
+        "precipitation_flux": 0.004166666883975267
+      },
+      "outbreak_day-9": {
+        "2m_temperature": 19.069917678833008,
+        "2m_relative_humidity": 71.66576385498047,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-8": {
+        "2m_temperature": 11.836583137512207,
+        "2m_relative_humidity": 87.73798370361328,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-7": {
+        "2m_temperature": 18.494916915893555,
+        "2m_relative_humidity": 81.44001770019531,
+        "precipitation_flux": 0.004166666883975267
+      },
+      "outbreak_day-6": {
+        "2m_temperature": 14.611583709716797,
+        "2m_relative_humidity": 67.49081420898438,
+        "precipitation_flux": 0.07083333283662796
+      },
+      "outbreak_day-5": {
+        "2m_temperature": 11.64074993133545,
+        "2m_relative_humidity": 91.55725860595703,
+        "precipitation_flux": 0.19583332538604736
+      },
+      "outbreak_day-4": {
+        "2m_temperature": 7.705333232879639,
+        "2m_relative_humidity": 94.44644927978516,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-3": {
+        "2m_temperature": 13.511584281921387,
+        "2m_relative_humidity": 88.42943572998047,
+        "precipitation_flux": 0.02916666865348816
+      },
+      "outbreak_day-2": {
+        "2m_temperature": 15.292834281921387,
+        "2m_relative_humidity": 91.6842269897461,
+        "precipitation_flux": 2.5375001430511475
+      },
+      "outbreak_day-1": {
+        "2m_temperature": 1.5469999313354492,
+        "2m_relative_humidity": 72.99761962890625,
+        "precipitation_flux": 0.09583333134651184
+      },
+      "outbreak_day": {
+        "2m_temperature": -4.23799991607666,
+        "2m_relative_humidity": 83.93775177001953,
+        "precipitation_flux": 0.0
+      }
+    }
+  },
+  "WAHIS/Poultry/{}/03/03/2022/South Dakota/Charles Mix County/43.125/-98.546": {
+    "county": "Charles Mix County",
+    "state": "South Dakota",
+    "date": "2022-03-03",
+    "total_abundance": 0.008850661335836,
+    "species": {},
+    "beta": 0.018867924528301,
+    "latitude": 43.125,
+    "longitude": -98.546,
+    "climate": {
+      "outbreak_day-13": {
+        "2m_temperature": 3.8877365589141846,
+        "2m_relative_humidity": 47.96246337890625,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-12": {
+        "2m_temperature": -3.877833366394043,
+        "2m_relative_humidity": 34.5605354309082,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-11": {
+        "2m_temperature": 7.572166442871094,
+        "2m_relative_humidity": 41.881465911865234,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-10": {
+        "2m_temperature": -6.494499683380127,
+        "2m_relative_humidity": 59.17390441894531,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-9": {
+        "2m_temperature": -17.344499588012695,
+        "2m_relative_humidity": 56.08253860473633,
+        "precipitation_flux": 0.13750000298023224
+      },
+      "outbreak_day-8": {
+        "2m_temperature": -18.261167526245117,
+        "2m_relative_humidity": 48.84156799316406,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-7": {
+        "2m_temperature": -16.000749588012695,
+        "2m_relative_humidity": 51.28070068359375,
+        "precipitation_flux": 0.10833332687616348
+      },
+      "outbreak_day-6": {
+        "2m_temperature": -13.96741771697998,
+        "2m_relative_humidity": 66.2386245727539,
+        "precipitation_flux": 0.008333333767950535
+      },
+      "outbreak_day-5": {
+        "2m_temperature": -4.82574987411499,
+        "2m_relative_humidity": 50.877166748046875,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-4": {
+        "2m_temperature": 0.23258332908153534,
+        "2m_relative_humidity": 43.76700973510742,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-3": {
+        "2m_temperature": 5.440916538238525,
+        "2m_relative_humidity": 40.894046783447266,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-2": {
+        "2m_temperature": 7.170083522796631,
+        "2m_relative_humidity": 55.05268478393555,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-1": {
+        "2m_temperature": 6.070083141326904,
+        "2m_relative_humidity": 71.43232727050781,
+        "precipitation_flux": 0.012500000186264515
+      },
+      "outbreak_day": {
+        "2m_temperature": 0.8330000042915344,
+        "2m_relative_humidity": 40.942481994628906,
+        "precipitation_flux": 0.0
+      }
+    }
+  },
+  "WAHIS/Poultry/{}/03/06/2022/Iowa/Buena Vista County/42.748/-95.092": {
+    "county": "Buena Vista County",
+    "state": "Iowa",
+    "date": "2022-06-03",
+    "total_abundance": 0.009315550602055,
+    "species": {},
+    "beta": 0.008,
+    "latitude": 42.748,
+    "longitude": -95.092,
+    "climate": {
+      "outbreak_day-13": {
+        "2m_temperature": 9.859131813049316,
+        "2m_relative_humidity": 53.76995849609375,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-12": {
+        "2m_temperature": 9.43566608428955,
+        "2m_relative_humidity": 52.632965087890625,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-11": {
+        "2m_temperature": 11.506500244140625,
+        "2m_relative_humidity": 48.346004486083984,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-10": {
+        "2m_temperature": 13.869000434875488,
+        "2m_relative_humidity": 49.563934326171875,
+        "precipitation_flux": 0.012500000186264515
+      },
+      "outbreak_day-9": {
+        "2m_temperature": 10.95858383178711,
+        "2m_relative_humidity": 82.48748016357422,
+        "precipitation_flux": 0.5166666507720947
+      },
+      "outbreak_day-8": {
+        "2m_temperature": 11.346083641052246,
+        "2m_relative_humidity": 79.17008972167969,
+        "precipitation_flux": 0.20416666567325592
+      },
+      "outbreak_day-7": {
+        "2m_temperature": 14.327332496643066,
+        "2m_relative_humidity": 69.44017028808594,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-6": {
+        "2m_temperature": 21.658584594726562,
+        "2m_relative_humidity": 59.11465072631836,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-5": {
+        "2m_temperature": 23.946083068847656,
+        "2m_relative_humidity": 67.57110595703125,
+        "precipitation_flux": 0.012500000186264515
+      },
+      "outbreak_day-4": {
+        "2m_temperature": 24.602333068847656,
+        "2m_relative_humidity": 65.6107406616211,
+        "precipitation_flux": 0.1666666716337204
+      },
+      "outbreak_day-3": {
+        "2m_temperature": 19.987749099731445,
+        "2m_relative_humidity": 50.29472351074219,
+        "precipitation_flux": 0.004166666883975267
+      },
+      "outbreak_day-2": {
+        "2m_temperature": 15.581500053405762,
+        "2m_relative_humidity": 60.979427337646484,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-1": {
+        "2m_temperature": 15.92941665649414,
+        "2m_relative_humidity": 50.69554138183594,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day": {
+        "2m_temperature": 18.996501922607422,
+        "2m_relative_humidity": 47.503700256347656,
+        "precipitation_flux": 0.30000001192092896
+      }
+    }
+  },
+  "WAHIS/Poultry/{}/03/08/2022/Iowa/Taylor County/40.726/-94.706": {
+    "county": "Taylor County",
+    "state": "Iowa",
+    "date": "2022-08-03",
+    "total_abundance": 0.171280465113669,
+    "species": {},
+    "beta": 1.0,
+    "latitude": 40.726,
+    "longitude": -94.706,
+    "climate": {
+      "outbreak_day-13": {
+        "2m_temperature": 25.647525787353516,
+        "2m_relative_humidity": 64.84872436523438,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-12": {
+        "2m_temperature": 26.76824951171875,
+        "2m_relative_humidity": 55.20707321166992,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-11": {
+        "2m_temperature": 29.47658348083496,
+        "2m_relative_humidity": 56.19179916381836,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-10": {
+        "2m_temperature": 28.12241554260254,
+        "2m_relative_humidity": 55.56207275390625,
+        "precipitation_flux": 0.2916666567325592
+      },
+      "outbreak_day-9": {
+        "2m_temperature": 22.0953311920166,
+        "2m_relative_humidity": 65.95328521728516,
+        "precipitation_flux": 0.012500000186264515
+      },
+      "outbreak_day-8": {
+        "2m_temperature": 21.31199836730957,
+        "2m_relative_humidity": 78.60591125488281,
+        "precipitation_flux": 0.17916667461395264
+      },
+      "outbreak_day-7": {
+        "2m_temperature": 24.418249130249023,
+        "2m_relative_humidity": 72.00872039794922,
+        "precipitation_flux": 0.004166666883975267
+      },
+      "outbreak_day-6": {
+        "2m_temperature": 23.73491668701172,
+        "2m_relative_humidity": 60.65065002441406,
+        "precipitation_flux": 0.008333333767950535
+      },
+      "outbreak_day-5": {
+        "2m_temperature": 21.301584243774414,
+        "2m_relative_humidity": 57.26164245605469,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-4": {
+        "2m_temperature": 22.13075065612793,
+        "2m_relative_humidity": 57.6014289855957,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-3": {
+        "2m_temperature": 23.670333862304688,
+        "2m_relative_humidity": 72.92745208740234,
+        "precipitation_flux": 0.0
+      },
+      "outbreak_day-2": {
+        "2m_temperature": 27.541166305541992,
+        "2m_relative_humidity": 69.77800750732422,
+        "precipitation_flux": 0.004166666883975267
+      },
+      "outbreak_day-1": {
+        "2m_temperature": 27.3474178314209,
+        "2m_relative_humidity": 72.16313934326172,
+        "precipitation_flux": 0.008333333767950535
+      },
+      "outbreak_day": {
+        "2m_temperature": 26.386999130249023,
+        "2m_relative_humidity": 75.1911392211914,
+        "precipitation_flux": 0.0
+      }
+    }
+  }
+}
