@@ -36,13 +36,14 @@ poultry_beta_scaled.json
    pip install -r requirements.txt
    Run the Model
    Use the following command to execute the SEI model:
-   python3 -m transmission_model.seimodel MODEL_NAME
+   python3 -m transmission_model.seimodel MODEL_NAME C22
    Where:
    MODEL_NAME can be:
    linear
    neural
    wms
    or None (defaults to wms)
+   where C22 is true or false, saying do you want to run with catch 22 or not
    Example:
    python3 -m transmission_model.seimodel neural
 4. Automatic Feature Collection
@@ -79,3 +80,6 @@ python3 filter_poultry_data.py
 # 2. Run SEI model (example: neural version)
 
 python3 -m transmission_model.seimodel neural
+
+
+USE plot_beta.py to plot how different teh betas are to each other in a scatter plot

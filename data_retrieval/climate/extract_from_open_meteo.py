@@ -64,6 +64,7 @@ def get_weather_data(lat, lon, outbreak_date):
 
 def extract_climate(query):
     # Parse the query
+
     parts = query.split('/')
     state = parts[6]
     county = parts[7]

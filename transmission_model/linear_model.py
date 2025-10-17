@@ -5,8 +5,12 @@ import joblib
 import pandas as pd
 from sklearn.linear_model import LinearRegression
 from transmission_model.get_env_inputs import get_environmental_inputs
+import pycatch22 as catch22
 
+from sklearn.preprocessing import StandardScaler
 
+CATCH_22 = False
+scaler = StandardScaler()
 # with open("transmission_model/output_json/sei_backward_seeding_outputs_sample_augmented.json", "r") as f:
 #     sei_outputs = json.load(f)
 
@@ -16,13 +20,36 @@ from transmission_model.get_env_inputs import get_environmental_inputs
 
 # TODO scale abundance for wild
 
+def add_time_series(outbreak_data):
 
-def train_model(train_filepath):
+    for key in outbreak_data:
+        climate = outbreak_data[key]['climate']
+        sorted_days = sorted(climate.keys(), key=lambda x: int(x.split('-')[-1]) if '-' in x else -1)
+        sorted_days.reverse()
+
+        temp_series = [climate[d]["2m_temperature"] for d in sorted_days if "2m_temperature" in climate[d]]
+        humidity_series = [climate[d]["2m_relative_humidity"] for d in sorted_days if "2m_relative_humidity" in climate[d]]
+        precip_series = [climate[d]["precipitation_flux"] for d in sorted_days if "precipitation_flux" in climate[d]]
+
+        catch22_feats = {}
+        if len(temp_series) > 0:
+            temp_feats = catch22.catch22_all(temp_series)['values']
+            humidity_feats = catch22.catch22_all(humidity_series)['values']
+            precip_feats = catch22.catch22_all(precip_series)['values']
+            
+            combined_feats = np.concatenate([temp_feats, humidity_feats, precip_feats])
+            catch22_feats = {"catch22_features": combined_feats.tolist()}
+
+        # Add the features to the outbreak data
+        outbreak_data[key]['catch22'] = catch22_feats
+    return outbreak_data
+
+def train_model(catch_22):
     '''parse and format (into json input form with abundance) json poultry training data
     check if output file has all values from csv, then check if it has 14 days of data
     call get_environmental_inputs and append to new file
     '''
-
+    CATCH_22 = catch_22
     df = pd.read_json("poultry_beta_scaled.json").T.reset_index()
     df.columns = ['key', 'county', 'state', 'date', 'total_abundance', 'species', 'beta', 'latitude', 'longitude', 'scaled_abundance'] 
 
@@ -33,9 +60,6 @@ def train_model(train_filepath):
     except (FileNotFoundError, json.JSONDecodeError):
         existing_data = {}
 
-
-
-    # Parse date if needed
 
 
     # get environmental features for every outbreak, store in "poultry_outbreaks_features.json"
@@ -56,91 +80,136 @@ def train_model(train_filepath):
         else:
             date = date_str
             
-        result, temp_C, rh_percent, precip_mm, dist_to_reservoir_km = get_environmental_inputs(key, filename)
+        result, temp_C, rh_percent, precip_mm, dist_to_reservoir_km = get_environmental_inputs(key)
 
         existing_data[key] = {
             "county": row["county"],
             "state": row["state"],
             "date": str(date),
-            "total_abundance": float(row["scaled_abundance"]),
+            "scaled_abundance": float(row["scaled_abundance"]),
             "species": row["species"],
             "beta": float(row["beta"]),
             "latitude": float(row["latitude"]),
             "longitude": float(row["longitude"]),
-            "climate": result.get("climate", {})  # safely attach weather data
+            "climate": result.get("climate", {}),  # safely attach weather data
+            "distance_inland": result.get("distance_inland"),  
+            "distance_to_water": result.get("distance_to_water")
         }
-
 
         with open(filename, "w") as f:
             json.dump(existing_data, f, indent=2)
 
+        
+    # Reload data for training
+    # df = pd.read_json("poultry_outbreak_features.json").T.reset_index()
+    # df.columns = ['key', 'county', 'state', 'date', 'scaled_abundance', 'species', 'beta', 'latitude', 'longitude', 'climate', 'distance_inland', 'distance_to_water'] 
 
+    # Reload data for training
+    with open("poultry_outbreak_features.json", "r") as f:
+        poultry_features = json.load(f)
     
+
+    if CATCH_22:
+        poultry_features = add_time_series(poultry_features)
+
+    X, y = [], []
+
+    for key, v in poultry_features.items():
+        climate = v.get("climate", {})
+        abundance = v.get("scaled_abundance")
+        beta = v.get("beta")
+        dist_reservoir = v.get("distance_to_water") 
+        dist_inland = v.get("distance_inland")
+        if CATCH_22:
+            catch_22_features = v.get("catch22")["catch22_features"]
+        outbreak_day = climate.get("outbreak_day", {})
+        temp = outbreak_day.get("2m_temperature")
+        rh = outbreak_day.get("2m_relative_humidity")
+        precip = outbreak_day.get("precipitation_flux")
+
+        # Skip if climate data missing or empty
+        if not climate:
+            continue
+        if CATCH_22:
+            all_features = [temp, rh, precip, dist_reservoir, dist_inland, abundance] + catch_22_features
+            if all(isinstance(x, (int, float)) and not np.isnan(x) for x in all_features):
+                X.append(all_features)
+                y.append(beta)
+        else:
+            if all(isinstance(x, (int, float)) for x in ([temp, rh, precip, dist_reservoir, dist_inland, abundance, beta] )):
+                X.append([temp, rh, precip, dist_reservoir, dist_inland, abundance])
+                y.append(beta)
+            
+
+    X, y = np.array(X), np.array(y)
+    scaler = StandardScaler()
+    X_scaled = scaler.fit_transform(X)
+
+    # Split first 200 for training, rest for validation
+
+
+    # Train Linear Regression model
+    model = LinearRegression()
+    model.fit(X_scaled, y)
+
+
+    if len(X) == 0:
+        print("No valid data points found for training.")
+        return
+    y_train_pred = model.predict(X_scaled)
+    rmse_train = np.sqrt(np.mean((y - y_train_pred)**2))
+    mae_train = np.mean(np.abs(y - y_train_pred))
+    r2_train = model.score(X_scaled, y)
+
+    print("\nTraining Metrics:")
+    print(f"  RMSE: {rmse_train:.4f}")
+    print(f"  MAE:  {mae_train:.4f}")
+    print(f"  R^2:   {r2_train:.4f}")
+    # TODO: include in explanation did not include MAPE since its not sensitive to very small values
+
+
+    # Save model
+    joblib.dump(model, "poultry_beta_model.joblib")
+
+    joblib.dump(scaler, "scaler.joblib")
+    print(f"Model trained and saved with {len(X)} samples.")
+
+    # Print feature importances
+    print("\nFeature coefficients:")
+    if CATCH_22:
+        base_features = ["temperature", "relative humidity", "precipitation", "distance inland", "scaled_abundance"]
+        catch22_names = [f"catch22_{i}" for i in range(len(model.coef_) - len(base_features))]
+
+        for name, coef in zip(base_features + catch22_names, model.coef_):
+            print(f"  {name}: {coef:.4f}")
+    else:
+        if not CATCH_22: 
+            for name, coef in zip(["temperature", "relative humidity", "precipitation", "distance inland", "scaled_abundance"], model.coef_): 
+                print(f" {name}: {coef:.4f}")
+
+
+
+
+def calculate_beta_linear_from_model(lat, lon, date_str, info, catch_22):
+    beta_model = joblib.load("poultry_beta_model.joblib")
+    scaler = joblib.load("scaler.joblib") 
+
+    climate = info["climate"]["outbreak_day"]
+    temp = climate.get("2m_temperature", 0)
+    rh = climate.get("2m_relative_humidity", 0)
+    precip = climate.get("precipitation_flux", 0)
+    dist_to_water = info.get("distance_to_water", 0)
+    dist_inland = info.get("distance_inland", 0)
+    scaled_abundance = info.get("scaled_abundance", 0)
+
+    if catch_22:
+        catch22_features = (info.get("catch22", {}))["catch22_features"]
+        # print(catch22_features)
+        all_features = [temp, rh, precip, dist_to_water, dist_inland, scaled_abundance] + catch22_features
+        # print(X)
+    else:
+        all_features = [temp, rh, precip, dist_to_water, dist_inland, scaled_abundance]
     
-#     # load sei_outputs_random.json with true beta values
-#     with open("transmission_model/output_json/sei_backward_seeding_outputs_sample_augmented.json", "r") as f:
-#         sei_outputs = json.load(f)
+    X_scaled = scaler.transform([all_features])
 
-#     # Load results_2022.json with predictor features
-#     with open("results_2022.json", "r") as f:
-#         results_2022 = json.load(f)
-
-#     X, y = [], []
-
-#     count = 0
-
-#     # train on half the values
-#     for entry in results_2022:
-#         for uuid, sei_entry in sei_outputs.items():
-#             if count >= (len(sei_outputs.items()))/2:
-#                 break
-#             uuid_parts = uuid.split('/')
-#             if uuid_parts[6].isalpha() or uuid_parts[7].isalpha():
-#                 uuid = uuid_parts[8] + '/' + uuid_parts[9] + '/' + uuid_parts[5] + '-' + uuid_parts[3] + '-' + uuid_parts[4]
-#             else:
-#                 uuid = uuid_parts[6] + '/' + uuid_parts[7] + '/' + uuid_parts[5] + '-' + uuid_parts[3] + '-' + uuid_parts[4]
-
-#             if entry['uuid'] == uuid:
-#                 result = entry
-
-#         beta = sei_entry["metadata"].get("beta")
-#         if beta is None:
-#             continue
-
-#         climate = result["climate"]["outbreak_day"]
-#         X.append([
-#             climate["2m_temperature"],
-#             climate["2m_relative_humidity"],
-#             climate["precipitation_flux"],
-#             result.get("distance_inland", 0),
-#             result.get("distance_to_water", 0),
-#             result.get("percentage_wetland", 0),
-#         ])
-#         y.append(beta)
-
-#     model = LinearRegression()
-#     model.fit(X, y)
-
-#     # Save trained model
-#     joblib.dump(model, "trained_beta_model.pkl")
-#     print("Trained beta regression model saved to trained_beta_model.pkl")
-
-
-# # Load trained regression model
-
-def calculate_beta_linear_from_model(lat, lon, date_str, info):
-    pass
-#     beta_model = joblib.load("trained_beta_model.pkl")
-#     for entry in results_2022:
-#         if entry['uuid'] == str(lat) + "/" + str(lon) + "/" + date_str:
-#             info = entry
-#     climate = info["climate"]["outbreak_day"]
-#     X = [[
-#         climate["2m_temperature"],
-#         climate["2m_relative_humidity"],
-#         climate["precipitation_flux"],
-#         info.get("distance_inland", 0),
-#         info.get("distance_to_water", 0),
-#         info.get("percentage_wetland", 0),
-#     ]]
-#     return beta_model.predict(X)[0]
+    return beta_model.predict(X_scaled)[0]

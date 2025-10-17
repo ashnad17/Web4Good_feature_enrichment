@@ -8,7 +8,10 @@ charset-normalizer==3.4.3
 click==8.3.0
 click-plugins==1.1.1.2
 cligj==0.7.2
+contourpy==1.3.3
+cycler==0.12.1
 flatbuffers==25.2.10
+fonttools==4.60.1
 gast==0.6.0
 geopandas==1.1.1
 google-pasta==0.2.0
@@ -19,10 +22,12 @@ idna==3.10
 jh2==5.0.10
 joblib==1.5.2
 keras==3.11.3
+kiwisolver==1.4.9
 libclang==18.1.1
 Markdown==3.9
 markdown-it-py==4.0.0
 MarkupSafe==3.0.3
+matplotlib==3.10.7
 mdurl==0.1.2
 ml_dtypes==0.5.3
 namex==0.1.0
@@ -38,6 +43,7 @@ pandas==2.3.3
 pillow==11.3.0
 platformdirs==4.4.0
 protobuf==6.32.1
+pycatch22==0.4.5
 Pygments==2.19.2
 pyogrio==0.11.1
 pyparsing==3.2.5

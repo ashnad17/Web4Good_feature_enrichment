@@ -38,7 +38,7 @@ def beta_modifier_precipitation(precip_mm, near_water=True):
 
 
 # Main Calculation Function 
-def calculate_beta_with_regime(lat, lon, date_str, abundance, beta_0=BETA_BASE):
+def calculate_beta_with_regime(date_str, info, beta_0=BETA_BASE):
    """
    Main β function for a case defined by (lat, lon, date)
    Pulls environmental and proximity data from helper function
@@ -48,7 +48,8 @@ def calculate_beta_with_regime(lat, lon, date_str, abundance, beta_0=BETA_BASE):
        date = datetime.strptime(date_str, "%Y-%m-%d").date()
    else:
        date = date_str
-   temp_C, rh_percent, precip_mm, dist_to_reservoir_km = get_environmental_inputs(lat, lon, date, abundance)
+   climate = info['climate']['outbreak_day']
+   temp_C, rh_percent, precip_mm, dist_to_reservoir_km = climate['2m_temperature'], climate['2m_relative_humidity'], climate['precipitation_flux'],info['distance_to_water']
    near_water = is_near_water(dist_to_reservoir_km)
    prox_mod = reservoir_proximity_modifier(dist_to_reservoir_km)
    temp_mod = beta_modifier_temperature(temp_C, near_water)

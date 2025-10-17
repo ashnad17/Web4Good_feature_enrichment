@@ -4,7 +4,7 @@ import json
 import os
 
 
-def get_environmental_inputs(query, filename):
+def get_environmental_inputs(query):
     result = begin_data_extraction(query)
     
 

@@ -32,7 +32,7 @@ def extract_inland_distance(query, result):
     geod = Geod(ellps="WGS84")
     _, _, dist_m = geod.inv(lon_query, lat_query, nearest.x, nearest.y)
 
+
     result['distance_inland'] = round(dist_m / 1000.0, 4)
-    
     return result
 
