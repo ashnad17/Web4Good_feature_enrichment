@@ -79,7 +79,7 @@ python3 filter_poultry_data.py
 
 # 2. Run SEI model (example: neural version)
 
-python3 -m transmission_model.seimodel neural
+python3 -m transmission_model.seimodel neural true
 
 
 USE plot_beta.py to plot how different teh betas are to each other in a scatter plot
