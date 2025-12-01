@@ -1,4 +1,4 @@
-# Avian Influenza SEI Model — README
+# Avian Influenza Feature Enrichment and Collection Pipeline — README
 
 ## Overview
 
