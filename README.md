@@ -10,7 +10,7 @@ It includes data preprocessing, parameter computation, feature extraction, and m
 ## **1. Data Source**
 
 - Data is downloaded from the **WAHIS private repository**.
-- The main input file is:
+- The main input file is: infur_20251006.csv
 
 Compute the transmission parameter β using the equation:
 β
